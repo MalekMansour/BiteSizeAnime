@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiteSizeAnime</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<div id="header">
+    <h1>BiteSizeAnime</h1>
+    <img src="images/miku.png" alt="Anime Image" style="max-width: 40%;">
+</div>
+
+<div id="popular-links">
+    <a href="#">SpyXFamily</a>
+    <a href="tpn.html">The Promised Neverland</a>
+    <a href="erased.html">Erased</a>
+    <a href="overflow.html">Overflow</a>
+    <a href="prison_school.html">Prison School</a>
+</div>
+
+<div id="search-bar">
+    <input type="text" id="searchInput" oninput="filterAnimes()" placeholder="Search..." style="width: 70%; padding: 10px;">
+</div>
+
+<div id="navbar">
+    <a href="main_page.html">Home</a>
+    <a href="anime_list.html">Animes</a>
+    <a href="#" onclick="redirectToRandomAnime()">Random</a>
+</div>
+
+<div id="footer">
+    <p>&copy; 2024 Anime Website</p>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>
