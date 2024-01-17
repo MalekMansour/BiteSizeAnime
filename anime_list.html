@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiteSizeAnime - Anime List</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            background-color: #222;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #popular-links {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #popular-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        #search-bar {
+            width: 70%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        #navbar {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        #footer {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .anime-poster {
+            width: 200px;
+            height: 300px;
+            margin: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .anime-poster:hover {
+            transform: scale(1.1);
+        }
+
+        .anime-poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+<div id="header">
+    <h1>BiteSizeAnime</h1>
+</div>
+
+<div id="popular-links">
+    <a href="death_note.html">Death Note</a>
+    <a href="tpn.html">The Promised Neverland</a>
+    <a href="erased.html">Erased</a>
+    <a href="spyxfamily.html">Spy X Family</a>
+    <a href="tokyoghoul.html">Tokyo Ghoul</a>
+</div>
+
+<div id="search-bar">
+    <input type="text" id="searchInput" oninput="filterAnimes()" placeholder="Search..." style="width: 70%; padding: 10px;">
+</div>
+
+<div id="navbar">
+    <a href="main_page.html">Home</a>
+    <a href="anime_list.html">Animes</a>
+    <a href="#" onclick="redirectToRandomAnime()">Random</a>
+</div>
+
+<!-- Anime posters -->
+<div id="content">
+    <div class="row">
+        <div class="anime-poster" onclick="redirectToWatch('death_note.html')">
+            <img src="images/death_note.jpg" alt="Death Note">
+        </div>
+
+        <div class="anime-poster" onclick="redirectToWatch('spyxfamily.html')">
+            <img src="images/spyxfamily.jpg" alt="SpyXFamily">
+        </div>
+
+        <div class="anime-poster" onclick="redirectToWatch('tpn.html')">
+            <img src="images/tpn.png" alt="The Promised Neverland Poster">
+        </div>
+
+        <div class="anime-poster" onclick="redirectToWatch('erased.html')">
+            <img src="images/erased.jpg" alt="Erased">
+        </div>
+
+        <div class="anime-poster" onclick="redirectToWatch('tokyoghoul.html')">
+            <img src="images/tokyoghoul.jpg" alt="Tokyo Ghoul">
+        </div>
+
+    </div>
+
+    <!-- Add more rows as needed -->
+    <div class="row">
+        <div class="anime-poster" onclick="redirectToWatch('kakegurui.html')">
+            <img src="images/kakegurui.jpg" alt="Kakegurui">
+        </div>
+
+        <div class="anime-poster" onclick="redirectToWatch('rezero.html')">
+            <img src="images/rezero.png" alt="Rezero">
+        </div>
+
+        <div class="anime-poster" onclick="redirectToWatch('prison_school.html')">
+            <img src="images/prison_school.jpg" alt="Prison School">
+        </div>
+
+        <div class="anime-poster" onclick="redirectToWatch('umaru.html')">
+            <img src="images/umaru.jpg" alt="Umaru">
+        </div>
+
+        <div class="anime-poster" onclick="redirectToWatch('rentagf.html')">
+            <img src="images/rentagf.jpg" alt="Rent a Girlfriend">
+        </div>
+
+    </div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
