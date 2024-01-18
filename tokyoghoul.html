@@ -80,3 +80,48 @@
         }
     </style>
 </head>
+<body>
+
+<div id="sidebar">
+    <a href="main_page.html" class="button"><img src="images/home.png" alt="Home"></a>
+    <a href="anime_list.html" class="button"><img src="images/back.png" alt="Back"></a>
+    <h2>Episode List:</h2>
+    <ul id="episode-list">
+        <li onclick="loadEpisode('tokyoghoul/episode1.mp4')"><a href="#">Episode 1</a></li>
+        <li onclick="loadEpisode('tokyoghoul/episode2.mp4')"><a href="#">Episode 2</a></li>
+        <li onclick="loadEpisode('tokyoghoul/episode3.mp4')"><a href="#">Episode 3</a></li>
+        <li onclick="loadEpisode('tokyoghoul/episode4.mp4')"><a href="#">Episode 4</a></li>
+        <li onclick="loadEpisode('tokyoghoul/episode5.mp4')"><a href="#">Episode 5</a></li>
+        <li onclick="loadEpisode('tokyoghoul/episode6.mp4')"><a href="#">Episode 6</a></li>
+        <li onclick="loadEpisode('tokyoghoul/episode7.mp4')"><a href="#">Episode 7</a></li>
+        <li onclick="loadEpisode('tokyoghoul/episode8.mp4')"><a href="#">Episode 8</a></li>
+        <li onclick="loadEpisode('tokyoghoul/episode9.mp4')"><a href="#">Episode 9</a></li>
+        <li onclick="loadEpisode('tokyoghoul/episode10.mp4')"><a href="#">Episode 10</a></li>
+        <li onclick="loadEpisode('tokyoghoul/episode11.mp4')"><a href="#">Episode 11</a></li>
+        <li onclick="loadEpisode('tokyoghoul/episode12.mp4')"><a href="#">Episode 12</a></li>
+    </ul>
+</div>
+
+<div id="main-content">
+    <h2>Tokyo Ghoul</h2>
+    <video controls id="video-player">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<script>
+    function loadEpisode(videoSource) {
+        var videoPlayer = document.getElementById("video-player");
+
+        // Set the video source and load
+        videoPlayer.src = "anime/" + videoSource;
+        videoPlayer.load();
+
+        // Play the video
+        videoPlayer.play();
+    }
+</script>
+
+</body>
+</html>
+
