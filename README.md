@@ -1,2 +1,2 @@
 # BiteSizeAnime
-An Anime Website that supports 13 &amp; lower episodes animes.
+A Mock Model of an Anime Host Website
