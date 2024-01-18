@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiteSizeAnime - Tokyo Ghoul</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+        }
+    
+        #sidebar {
+            width: 20%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+    
+            /* Custom scrollbar styles for WebKit browsers */
+            scrollbar-width: thin;
+            scrollbar-color: #555 #333;
+        }
+    
+        #sidebar::-webkit-scrollbar {
+            width: 12px;
+        }
+    
+        #sidebar::-webkit-scrollbar-thumb {
+            background-color: #555;
+            border-radius: 10px;
+        }
+    
+        #sidebar::-webkit-scrollbar-track {
+            background-color: #333;
+            border-radius: 10px;
+        }
+    
+        #main-content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    
+        #episode-list {
+            list-style: none;
+            padding: 0;
+        }
+    
+        #episode-list li {
+            margin-bottom: 10px;
+            background-color: #555;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        #episode-list li:hover {
+            background-color: #777;
+        }
+    
+        #episode-list a {
+            color: #fff;
+            text-decoration: none;
+        }
+    
+        #video-player {
+            width: 100%;
+        }
+    
+        .button img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: -20px;
+            margin-left: 15px;
+        }
+    </style>
+</head>
